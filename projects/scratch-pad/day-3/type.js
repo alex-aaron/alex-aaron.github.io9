@@ -11,6 +11,8 @@
  * 
  * TIP: In JavaScript, how can we decipher if a value is an Array? Can typeof
  * work?
+ * 
+ * TIP: There is an existing method that is very good for this problem.
  */
 function isArray(value) {
     // YOUR CODE BELOW HERE //
@@ -23,7 +25,7 @@ function isArray(value) {
 
 /** 
  * Given an input value, return true if the value is an Object intended as a 
- * collection, false if otherwise.
+ * collection, false if otherwise. // { a: 1, b: 2 }
  * 
  * TIP: In JavaScript, how can we decipher if a value is an Object, but not 
  * null, not an Array, not a Date - all of these will return 'object' if used 
@@ -32,7 +34,8 @@ function isArray(value) {
 function isObject(value) {
     // YOUR CODE BELOW HERE //
     
-    
+    // determine if typeof on input value returns 'object' AND value is not an array AND value is not null AND
+    // value is not an instance of the date object
     
     
     // YOUR CODE ABOVE HERE //

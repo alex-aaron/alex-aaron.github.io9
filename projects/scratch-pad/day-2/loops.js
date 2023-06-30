@@ -13,7 +13,7 @@
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
   
-  
+  console.log(array);
   
   
   // YOUR CODE ABOVE HERE //

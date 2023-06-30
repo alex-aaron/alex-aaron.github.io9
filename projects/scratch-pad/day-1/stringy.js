@@ -15,7 +15,7 @@
 function length(string) {
     // YOUR CODE BELOW HERE //
     
-    // return input string's length
+    // return length property of input string
     return string.length;
 
     // YOUR CODE ABOVE HERE //
@@ -59,9 +59,7 @@ function toUpperCase(string) {
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
 
-    let newString = string.replaceAll(" ", "-");
 
-    return newString;
 
     // YOUR CODE ABOVE HERE //
 }
@@ -80,10 +78,14 @@ function toDashCase(string) {
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-    
-
-    // YOUR CODE ABOVE HERE //
+    //create if statement using [] and == to compare first character
+    console.log('alex'[0].localeCompare('A'));
+    if (string[0].localeCompare(char)) {
+        return true;
+        } else {
+        return false;
+        }
+        // YOUR CODE ABOVE HERE //
 }
 
 /**
@@ -164,7 +166,13 @@ function longest(stringOne, stringTwo) {
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
-
+    if (stringOne > stringTwo){
+        return 1;
+    } else if (stringTwo > stringOne){
+        return -1;
+    } else {
+        return 0;
+    }
 
     // YOUR CODE ABOVE HERE //
 }
@@ -180,7 +188,13 @@ function sortAscending(stringOne, stringTwo) {
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
-
+    if (stringTwo > stringOne){
+        return 1;
+    } else if (stringOne > stringTwo){
+        return -1;
+    } else {
+        return 0;
+    }
 
 
     // YOUR CODE ABOVE HERE //
